@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import "./Product.css";
+import styles from "./Product.module.css";
 
 export default function Product ({product}) {
     const stars = product.rating.rate > 4 ? "⭐️⭐️⭐️⭐️⭐️" : "⭐️⭐️⭐️";
