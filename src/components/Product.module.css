@@ -1,5 +1,6 @@
 /* Product Card */
-.product-card {
+/* vi kan navngive classes mere enkelt fordi der er et local scope i stedet for et globalt nu */
+.card {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 12px;
@@ -8,12 +9,18 @@
   transition: all 0.3s ease;
 }
 
-.product-card:hover {
+.card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
-.product-image {
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.image {
   width: 100%;
   height: 200px;
   object-fit: contain;
@@ -21,14 +28,14 @@
   padding: 1rem 0;
 }
 
-.product-info {
+.info {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
 
-.product-title {
+.title {
   font-size: 1.25rem;
   font-weight: 600;
   color: #1a1a1a;
@@ -41,7 +48,7 @@
   overflow: hidden;
 }
 
-.product-description {
+.description {
   font-size: 0.9rem;
   color: #666;
   line-height: 1.5;
@@ -52,40 +59,40 @@
   line-clamp: 23;
   -webkit-box-orient: vertical;
   overflow: hidden;
-
 }
 
-.product-price {
+.price {
   font-size: 1.5rem;
   font-weight: bold;
   color: #27ae60;
   margin: 0;
 }
 
-.product-stock {
+.stock {
   font-size: 0.9rem;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   color: #333;
 }
 
-.product-stock.in-stock {
+/* className inStock som ligger under className stock*/
+.stock.inStock {
   background-color: #d4edda;
   color: #155724;
 }
 
-.product-stock.out-of-stock {
+.stock.outOfStock {
   background-color: #f8d7da;
   color: #721c24;
 }
 
-.product-rating {
+.rating {
   display: flex;
   align-items: center;
   gap: 0.25rem;
 }
 
-.product-category {
+.category {
   display: flex;
   font-size: 0.85rem;
   justify-content: left;

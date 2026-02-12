@@ -6,7 +6,7 @@ import styles from "./NavigationBar.module.css";
 
 export default function NavigationBar() {
   return (
-    <nav>
+    <nav className={styles.nav}>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/products">Products</NavLink>
       <NavLink to="/contact">Contact</NavLink>

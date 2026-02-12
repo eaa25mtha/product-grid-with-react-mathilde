@@ -1,0 +1,20 @@
+/* Product Card */
+/* vi kan navngive classes mere enkelt fordi der er et local scope i stedet for et globalt nu */
+
+.stock {
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: #333;
+}
+
+/* className inStock som ligger under className stock*/
+.stock.inStock {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.stock.outOfStock {
+  background-color: #f8d7da;
+  color: #721c24;
+}
